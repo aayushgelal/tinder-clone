@@ -1,0 +1,19 @@
+.photo {
+    position: absolute;
+    width: 90vw;
+    height: 70vh;
+    background-position: center;
+    top: 15%;
+    left: 5%;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 30px gray;
+}
+
+.photo h2 {
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    bottom: 2%;
+    left: 30%;
+}

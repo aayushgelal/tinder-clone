@@ -5,18 +5,18 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"cd tinder-clone && npm run build",
-    "install-client":"cd tinder-clone && npm install",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm run install-client && npm run build",
-    "start":"nodemon server.js",
-    "client":"cd tinder-clone && npm start",
+    "build": "cd tinder-clone && npm run build",
+    "install-client": "cd tinder-clone && npm install",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run install-client && npm run build",
+    "start": "nodemon server.js",
+    "client": "cd tinder-clone && npm start",
     "dev": "concurrently \"npm run start\" \"npm run client\""
-
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.10.15"
   }

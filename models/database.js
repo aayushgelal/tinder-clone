@@ -1,7 +1,8 @@
 //jshint esversion:6
 //Tnk8W6CCAMwl3tCg
 const mongoose=require('mongoose');
-mongoose.connect(process.env.MONGODBURI,{useNewUrlParser:true});
+require('dotenv').config();
+mongoose.connect(process.env.DB,{useNewUrlParser:true});
 const UserSchema=mongoose.Schema({
   name:String,
   profile:String,
@@ -9,6 +10,6 @@ const UserSchema=mongoose.Schema({
 });
 const User=mongoose.model("User",UserSchema);
 mongoose.connection.on('connected',()=>{
-  console.log("databaseconnected");
+  console.log("databaseconnecte");
 })
 module.exports=User;
